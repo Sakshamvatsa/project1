@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+
+}
+.logo img{
+    width: 26%;
+    border-radius: 50%;
+    border: 3px solid white;
+    align-items: center;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+   
+
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    /* background-color:black; */
+    
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+
+}
+.nav-list li a{
+
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+font-family: "Ubuntu",sans-serif;
+}
+.nav-list li a:hover{
+    color: gray;
+    text-decoration: none;
+}
+.rightnav{
+    /* background-color: blue; */
+    width: 50%;
+    text-align: right;
+    padding: 0 25px;
+
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+
+}
+.background{
+ background:rgba(0,0,0,0.7) url("https://cdn.pixabay.com/photo/2016/11/23/14/54/architecture-1853353_960_720.jpg");
+ background-size: cover;   
+ background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+
+}
+.firstsection{
+    height: 100vh;
+
+
+}
+.firsthalf{
+width: 80%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.secondhalf{
+   width: 40%; 
+   
+}
+.secondhalf img{
+    width: 200px;
+    height: 200px;
+
+   
+    border: 4px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    
+
+}
+.text-big{
+    font-size: 36px;
+   
+
+
+}
+.text-small{
+    font-size: 18px;
+
+}
+.btn{
+    padding: 8px 20px ;
+    margin: 7px 3px ;
+    border: 2px solid white;
+    border-radius: 8px;
+    /* font-size: 18px; */
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+}
+.btn:hover{
+    color: gray;
+}
+.section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+    font-family: "Ubuntu",sans-serif;
+    
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+.sectionTag{
+    padding: 16px 0;
+}
+.sectionsubTag{
+    font-family: sans-serif;
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+.contact{
+    background-color: #f6f5f4;
+    height: 833px;
+
+}
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family:  "ubuntu"sans-serif ;
+}
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+    padding-top: 20px;
+
+}
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin: 14px 0;
+    padding: 5px 3px;
+
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: "Ubuntu",sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:1140px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px ;
+    }
+}
